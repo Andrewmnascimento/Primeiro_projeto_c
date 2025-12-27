@@ -11,7 +11,12 @@ int main(void)
     printf("1. Conversão de Celsius para Farenheit \n");
     printf("2. Conversão de Farenheit para Celsius\n");
     int tipo_conversao; 
+<<<<<<< HEAD
     
+=======
+    float temp_celsius;
+    float temp_farenheit;
+>>>>>>> primeiro_projeto_c/main
     do
     {
         tipo_conversao = get_int("Insira uma das opções: ");
@@ -20,7 +25,15 @@ int main(void)
     while (tipo_conversao < 1 || tipo_conversao >= 3);
     if (tipo_conversao == 1)
     {
+<<<<<<< HEAD
         c_to_f();
+=======
+        printf("Tudo certo, vamos converter de Celsius para Farenheit!\n");
+        temp_celsius = get_float("Qual a temperatura em Celsius? ");
+        temp_farenheit = (1.8*temp_celsius) + 32;
+        printf("A temperatura em Farenheit é %f\n", temp_farenheit);
+
+>>>>>>> primeiro_projeto_c/main
     } else
     {
         f_to_c();
